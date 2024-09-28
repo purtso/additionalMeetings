@@ -2,6 +2,7 @@ package com.example.additionalMeetings.service;
 
 import com.example.additionalMeetings.model.entity.MusicModel;
 import com.example.additionalMeetings.model.entity.UserModel;
+import com.example.additionalMeetings.model.enums.MusicGenre;
 import com.example.additionalMeetings.model.enums.UserRole;
 import com.example.additionalMeetings.model.request.MusicRequest;
 import com.example.additionalMeetings.model.response.MusicResponse;
@@ -26,7 +27,7 @@ public class MusicService {
         music1.setTitle("Rap god");
         music1.setArtist("Eminem");
         music1.setAlbum("MM2");
-        music1.setGenre("Rap");
+        music1.setGenre(MusicGenre.RAP);
         musicModels.put(music1.getId(), music1);
     }
 

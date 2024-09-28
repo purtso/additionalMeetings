@@ -1,12 +1,14 @@
 package com.example.additionalMeetings.model.response;
 
+import com.example.additionalMeetings.model.enums.MusicGenre;
+
 import java.util.UUID;
 
 public class MusicResponse {
     private String title;
     private String artist;
     private String album;
-    private String genre;
+    private MusicGenre genre;
     private UUID id;
 
     public String getTitle() {
@@ -33,11 +35,11 @@ public class MusicResponse {
         this.artist = artist;
     }
 
-    public String getGenre() {
+    public MusicGenre getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(MusicGenre genre) {
         this.genre = genre;
     }
 
