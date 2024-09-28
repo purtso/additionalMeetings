@@ -20,7 +20,7 @@ public class UserController {
         return userService.addUser(userRequest);
     }
 
-    @GetMapping("")
+    @GetMapping("/")
     public List<UserResponse> getAllUsers(){
         return userService.findAllUsers();
     }

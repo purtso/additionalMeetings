@@ -1,4 +1,4 @@
-package com.example.additionalMeetings.model;
+package com.example.additionalMeetings.model.entity;
 
 import com.example.additionalMeetings.model.enums.UserRole;
 

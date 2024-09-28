@@ -1,6 +1,6 @@
 package com.example.additionalMeetings.service;
 
-import com.example.additionalMeetings.model.UserModel;
+import com.example.additionalMeetings.model.entity.UserModel;
 import com.example.additionalMeetings.model.enums.UserRole;
 import com.example.additionalMeetings.model.request.UserRequest;
 import com.example.additionalMeetings.model.response.UserResponse;
@@ -44,6 +44,10 @@ public class UserService {
 
         users.put(userModel.getId(), userModel);
         return "user created";
+    }
+
+    public UserModel getUserById(String id){
+        return users.get(id);
     }
 
     public List<UserResponse> findAllUsers() {
